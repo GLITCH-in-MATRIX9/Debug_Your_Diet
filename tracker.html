@@ -95,15 +95,23 @@
         </div>
 
         <div class="bfp-container">
-            <h1>Body Fat Percentage Calculator</h1>
+            <h1>Body Fat Percentage Calculator WOMEN</h1>
             <label for="bmi">Enter your BMI:</label>
             <input type="number" id="bmi" placeholder="Enter your BMI" step="0.01" required>
             <label for="age">Enter your age:</label>
             <input type="number" id="age" placeholder="Enter your age" required>
             <button onclick="calculateBodyFat()">Calculate</button>
             <button onclick="location.href='bfpw.jpg'">VIEW RANGE FOR WOMEN</button>
-            <button onclick="location.href='bfpm.png'">VIEW RANGE FOR MEN</button>
             <div id="result2"></div>
+
+            <h1>Body Fat Percentage Calculator MEN</h1>
+            <label for="bmi2">Enter your BMI:</label>
+            <input type="number" id="bmi2" placeholder="Enter your BMI" step="0.01" required>
+            <label for="age2">Enter your age:</label>
+            <input type="number" id="age2" placeholder="Enter your age" required>
+            <button onclick="calculateBodyFat2()">Calculate</button>
+            <button onclick="location.href='bfpm.png'">VIEW RANGE FOR MEN</button>
+            <div id="result3"></div>
         </div>
     </div>
           
@@ -182,18 +190,36 @@
             document.getElementById('color-blindness-result').textContent = `Points out of 5: ${score}`;
         }
         function calculateBodyFat() {
-            const bmi = parseFloat(document.getElementById('bmi').value);
-            const age = parseFloat(document.getElementById('age').value);
+            const bmi_1 = parseFloat(document.getElementById("bmi").value);
+            const age = parseFloat(document.getElementById("age").value);
 
-            if (isNaN(bmi) || isNaN(age)) {
-                alert("Please enter valid values for BMI and age.");
+            if (isNaN(bmi_1) || isNaN(age)) {
+                alert("Please enter valid numbers for BMI and age.");
                 return;
             }
 
-            const bodyFatPercentage = 0.29288 * bmi + 0.29669 * age - 19.19053;
 
-            document.getElementById('result2').textContent = `Estimated Body Fat Percentage: ${bodyFatPercentage.toFixed(2)}%`;
+            // Calculate Body Fat Percentage using BMI and age
+            const bodyFatPercentage = 1.2 * bmi_1 + 0.23 * age - 5.4;
+
+            document.getElementById("result2").innerHTML = `Estimated Body Fat Percentage: ${bodyFatPercentage.toFixed(2)}%`;
         }
+        function calculateBodyFat2() {
+            const bmi_2 = parseFloat(document.getElementById("bmi2").value);
+            const age2 = parseFloat(document.getElementById("age2").value);
+
+            if (isNaN(bmi_2) || isNaN(age2)) {
+                alert("Please enter valid numbers for BMI and age.");
+                return;
+            }
+
+
+            // Calculate Body Fat Percentage using BMI and age
+            const bodyFatPercentage_2 = 1.2 * bmi_2 + 0.23 * age2 - 16.2;
+
+            document.getElementById("result3").innerHTML = `Estimated Body Fat Percentage: ${bodyFatPercentage_2.toFixed(2)}%`;
+        }
+        
     </script>
     <footer>
         <p>&copy; DEBUG YOUR DIET 2023 Showcase. All rights reserved.</p>
