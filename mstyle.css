@@ -70,6 +70,7 @@ h1{
         left: 0;
         width: 100%;
         background-color:#e9dcb9 ;
+        z-index: 1000;
     }
 
     .nav.active a {
@@ -229,6 +230,13 @@ button:active{
         max-width: 100%;
     }
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
 
 
 @media screen and (max-width: 600px) {

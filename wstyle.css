@@ -70,6 +70,7 @@ h1{
         left: 0;
         width: 100%;
         background-color:#e9dcb9 ;
+        z-index: 1000;
     }
 
     .nav.active a {
@@ -224,19 +225,10 @@ button:active{
 }
 /* Adjust styles for smaller screens */
 
-
-.image {
-    background-image: url("./w2.png");
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 13em;
-}
-
-.image img{
-    display: none;
+img {
+    max-width: 100%;
+    height: auto;
+    
 }
 
 @media screen and (max-width: 768px) {

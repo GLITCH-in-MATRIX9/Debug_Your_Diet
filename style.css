@@ -213,4 +213,20 @@ footer {
     justify-content: center;
     align-items: flex-end;
 }
+/*making an image responsive */
+.image {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .image {
+        max-width: 100%;
+    }
+}
