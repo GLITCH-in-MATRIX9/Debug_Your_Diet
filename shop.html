@@ -30,6 +30,16 @@
    <div class="image">
     <img src="SHOP1.png" alt="Your Image Description">
    </div> 
+   <script>
+    // JavaScript to toggle the navigation menu in smaller screens
+    const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('.nav');
+
+    menuIcon.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        menuIcon.classList.toggle('active');
+    });
+    </script>    
    
     <div class="container">
         <div class="card">
