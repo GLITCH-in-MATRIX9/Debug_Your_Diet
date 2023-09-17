@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>DYD</title>
-        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="shop.css"> 
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head> 
@@ -27,51 +27,52 @@
 
         </nav>   
    </header>
-   <div>
-    <h1>DEBUG YOUR DIET</h1>
-   </div>
-    </div>
+   <div class="image">
+    <img src="SHOP1.png" alt="Your Image Description">
+   </div> 
+   
     <div class="container">
-        <div class="text">
-            <h2>CODE<span><br>YOUR</span><br>JOURNEY</h2>
-
+        <div class="card">
+            <img src="./S1.png" alt="sports wear">
+            <h3>DYD SPORTS BRA</h3>
+            <p>Price: ₹.199</p>
+            <button onclick="buyProduct('Product 2', 15)">Buy</button>
         </div>
-    </div>
-    <div class="image">
-        <img src="BOM.png" alt="Your Image Description">
-    </div>
-    <div class="image">
-        <img src="BOM2.png" alt="Your Image Description">
-    </div>
-    
-    <div class="loading-screen">
-        <div class="loading-text">---</div>
-        <div class="loading-text">| DYD |</div>
-        <div class="loading-text">---</div>
-    </div>
-    <script>
-        // Simulate loading completion
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-                var loadingScreen = document.querySelector(".loading-screen");
-                loadingScreen.style.opacity = "0";
-                setTimeout(function () {
-                    loadingScreen.style.display = "none";
-                    
-                }, 500);
-            }, 2000); 
-        });
-    </script>
-     <script>
-        // JavaScript to toggle the navigation menu in smaller screens
-        const menuIcon = document.querySelector('.menu-icon');
-        const nav = document.querySelector('.nav');
 
-        menuIcon.addEventListener('click', () => {
-            nav.classList.toggle('active');
-            menuIcon.classList.toggle('active');
-        });
-    </script>
+        <div class="card">
+            <img src="./S2.png" alt="mug">
+            <h3> DYD COFFEE MUG</h3>
+            <p>Price: ₹.79</p>
+            <button onclick="buyProduct('Product 2', 15)">Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="./S3.png" alt="Grape Juice">
+            <h3>DYD BASIC HOODIE </h3>
+            <p>Price: ₹.399</p>
+            <button onclick="buyProduct('Product 2', 15)">Buy</button>
+        </div>
+        <div class="card">
+          <img src="./S4.png" alt="Guava Juice">
+          <h3>CUSTOM CALENDER</h3>
+          <p>Price: ₹.59</p>
+          <button onclick="buyProduct('Product 2', 15)">Buy</button>
+        </div>
+        <div class="card">
+          <img src="./S5.png" alt="kiwi Juice">
+          
+          <h3>CROP TOP HOODIE</h3>
+          <p>Price: ₹.399</p>
+          <button onclick="buyProduct('Product 2', 15)">Buy</button>
+        </div>
+        <div class="card">
+          <img src="./S6.png" alt="lemon Juice">
+          <h3>Lemon Juice</h3>
+          <p>Price: ₹.299</p>
+          <button onclick="buyProduct('Product 2', 15)">Buy</button>
+        </div>
+        
+    </div>
 
    <footer>
     <p>&copy; DEBUG YOUR DIET 2023 Showcase. All rights reserved.</p>
@@ -93,7 +94,4 @@
     </body>
 </html>
 
-
-
-
-
+ 
